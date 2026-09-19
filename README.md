@@ -33,4 +33,4 @@ Scaffold a new project automatically using the **Qyro CLI**:
 
 ```bash
 # Create a Kivy project
-qyro init my-app --binding Kivy
+qyro init -n my-app --binding Kivy
