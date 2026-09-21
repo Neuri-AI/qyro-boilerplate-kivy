@@ -5,7 +5,7 @@ from qyro_engine import ApplicationContext
 from qyro_engine.ui.component import Component
 
 
-class KivyExampleApp(App, Component, ApplicationContext):
+class ${class_name}(App, Component, ApplicationContext):
 
     def component_will_mount(self):
         Window.size = (640, 480)
@@ -19,7 +19,7 @@ class KivyExampleApp(App, Component, ApplicationContext):
                 f"App Title: {self.window_title}\n"
                 f"Active Icon: {self.app_icon}\n"
                 f"Platform: {self.platform.value} (Frozen: {self.is_frozen})\n\n"
-                f"Build Settings:\n{self.app}\n"
+                f"Build Settings:\n{self.app_settings}\n"
             ),
             halign="left",
             valign="middle",
