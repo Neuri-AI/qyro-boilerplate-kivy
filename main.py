@@ -1,8 +1,8 @@
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.core.window import Window
-from qyro_engine import ApplicationContext
-from qyro_engine.ui.component import Component
+from qyro import ApplicationContext
+from qyro.ui.component import Component
 
 
 class ${class_name}(App, Component, ApplicationContext):
