@@ -32,4 +32,4 @@ class ${class_name}(App, Component, ApplicationContext):
 
 
 if __name__ == "__main__":
-     ${class_name}().exec()
+     ${class_name}().run()
