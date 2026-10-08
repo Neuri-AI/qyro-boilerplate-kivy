@@ -1,6 +1,4 @@
 {
-    "release": true,
-    "environment": "development",
     "bundle": {
         "dmg": {
             "window": {
@@ -20,15 +18,10 @@
                 "x": 510,
                 "y": 200
             },
-            "background": "resources/mac/release/dmg-background.png"
+            "background": "resources/mac/release/dmg-background.png",
+            "extra_files": []
         },
-        "extra_files": [
-            "README.md",
-            {
-                "source": "README.md",
-                "destination": "README.md"
-            }
-        ],
+        "extra_files": [],
         "nsis": {
             "icons": {
                 "install": "resources/base/icons/install.ico",
@@ -37,24 +30,6 @@
             "welcome_bitmap": "",
             "install_location": "programfiles64",
             "execution_level": "highest"
-        }
-    },
-    "sign": {
-        "windows": {
-            "certificate": "src/sign/windows/certificate.pfx",
-            "timestamp_server": "http://timestamp.digicert.com",
-            "description": "${app_name}",
-            "url": "https://example.com"
-        },
-        "mac": {
-            "identity": "Developer ID Application: Your Name (TEAMID)",
-            "entitlements": "src/sign/mac/entitlements.plist",
-            "target_architecture": "universal2",
-            "notary": {
-                "enabled": true,
-                "staple": true,
-                "assess_gatekeeper": true
-            }
         }
     }
 }
