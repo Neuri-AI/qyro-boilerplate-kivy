@@ -2,6 +2,7 @@ __pycache__/
 build/
 release/
 settings/secrets.json
+settings/sign.json
 *.pyc
 *.pyo
 *.pyd
